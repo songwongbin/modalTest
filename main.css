@@ -1,0 +1,147 @@
+/* 고운돋음 폰트 적용 */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&display=swap');
+* {
+    font-family: "Gowun Dodum", serif;
+}
+
+.ball:hover {
+    transform: scale(110%, 110%);
+}
+
+.meberIntro {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+}
+
+.top {
+    background-color: red;
+    width: 100%;
+    height: 10vh;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top > p {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.main {
+    background-image: url(gridBackground.avif);
+    background-position: center;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemonImg {
+    width: 30vw;
+    height: 40vh;
+
+    transform: rotate(0deg);
+    margin-right: 1vw;
+}
+
+.teammate {
+    display: flex;
+    flex-direction: column;
+}
+
+.mate_name {
+    background-color: white;
+
+    border: 3px solid red;
+    border-radius: 10px;
+
+    width: 25vw;
+    height: 8vh;
+
+    margin-bottom: 3vh;
+}
+
+.mate_content {
+    background-color: white;
+
+    border: 3px solid red;
+    border-radius: 10px;
+
+    width: 25vw;
+    height: 25vh;
+}
+
+.guestBook {
+    background-color: white;
+
+    border-radius: 10px;
+    border : 3px solid red;
+
+    width: 80%;
+    height: 25vh;
+
+    margin: 1vh auto 0 auto;
+}
+
+.down {
+    background-image: url(gridBackground.avif);
+    background-position: center;
+
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.downBtn {
+    border: 3px solid black;
+    border-radius: 5px;
+
+    background-color: red;
+
+    color: white;
+    font-size: 15px;
+
+    width: 15vw;
+    height: 5vh;
+
+    margin: 0 1vw 0 1vw;
+}
+
+.detail_modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal_popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 20px;
+}
